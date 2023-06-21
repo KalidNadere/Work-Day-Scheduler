@@ -1,0 +1,40 @@
+.container {
+  margin: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+#currentDay {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.description {
+  flex-grow: 1;
+  height: 60px;
+  color: rgb(56, 50, 50);
+}
+
+.saveBtn {
+  width: 80px;
+  height: 65px;
+  background-color: rgb(90, 198, 234);
+  border-radius: 0 10% 10% 0;
+  color: aliceblue;
+  cursor: pointer;
+}
+.saveBtn:active {
+  color: black;
+}
