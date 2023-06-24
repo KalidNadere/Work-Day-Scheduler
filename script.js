@@ -12,3 +12,25 @@ $(".saveBtn").click(function() {
   showNotification("New appointment added to <span class='maroon-text'>local storage</span>");
   });
 });
+
+// Display current day at the top of the schedule
+function displayCurrentDay() {
+  var currentDayElement = $("#currentDay");
+  var currentDate = new Date().toLocaleString("en-AUS", {
+    weekday: "Long",
+    month: "Long",
+    day: "numeric",
+    year: "numeric"
+  });
+  currentDayElement.text(currentDate);
+}
+
+// Saving events in local storage
+function loadEventsFromLocalStorage() {
+  for (var i = 9; i <= 17; i++) {
+    var eventText = localStorage.getItem(i);
+    if (eventText) {
+      $("#", + i).val(eventText);
+    }
+  }
+}
