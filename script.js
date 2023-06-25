@@ -16,12 +16,7 @@ $(".saveBtn").click(function() {
 // Display current day at the top of the schedule
 function displayCurrentDay() {
   var currentDayElement = $("#currentDay");
-  var currentDate = new Date().toLocaleString("en-AUS", {
-    weekday: "Long",
-    month: "Long",
-    day: "numeric",
-    year: "numeric"
-  });
+  var currentDate = day.js().format("dddd, MMMM DD, YYYY");
   currentDayElement.text(currentDate);
 }
 
@@ -33,4 +28,20 @@ function loadEventsFromLocalStorage() {
       $("#", + i).val(eventText);
     }
   }
+}
+
+// To display past, present & future hours & update color codes accordingly
+function updateHourlyColors() {
+  var currentHour = Day.js().hour();
+  $(".description").each(function() {
+    var hour = parseInt($(this).attr("id"));
+
+    if (hour < currentHour) {
+      $(this).css("background-color", "#d3d3d3");
+    } else if (hour === currentHour) {
+      $(this).css("background-color", "#ff6961");
+    } else {
+      $(this).css("background-color", "#77dd77");
+    }
+  });
 }
