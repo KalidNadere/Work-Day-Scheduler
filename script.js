@@ -16,7 +16,7 @@ $(".saveBtn").click(function() {
 // Display current day at the top of the schedule
 function displayCurrentDay() {
   var currentDayElement = $("#currentDay");
-  var currentDate = dayjs().format("dddd, MMMM DD, YYYY");
+  var currentDate = dayjs().format("dddd, DD MMMM, YYYY");
   currentDayElement.text(currentDate);
 }
 
