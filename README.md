@@ -10,7 +10,7 @@ When a time block is clicked into, the user is able to enter an event, click the
 
 ## Deployed Webpage URL
 
-
+https://kalidnadere.github.io/05-Work-Day-Scheduler/
 
 
 ## Screenshot of the deployed page
