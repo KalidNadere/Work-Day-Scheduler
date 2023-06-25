@@ -58,5 +58,5 @@ function showNotification(message) {
       notificationElement.text("");
     }, 2000);
   }, 2000);
-
+  
 }
