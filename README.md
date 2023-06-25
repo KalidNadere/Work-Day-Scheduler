@@ -10,7 +10,6 @@ When a time block is clicked into, the user is able to enter an event, click the
 
 ## Deployed Webpage URL
 
-https://kalidnadere.github.io/05-Work-Day-Scheduler/
 
 
 
@@ -18,9 +17,7 @@ https://kalidnadere.github.io/05-Work-Day-Scheduler/
 
 ![Work Day Schedule Screenshot](https://github.com/KalidNadere/05-Work-Day-Scheduler/assets/131591052/3589d512-998d-4a49-be74-a16ed1be5107)
 
-
 ## Built with
-
 - Visual Studio Code
 - J Query
 - Day.js
