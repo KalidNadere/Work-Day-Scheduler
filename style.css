@@ -38,3 +38,24 @@
 .saveBtn:active {
   color: black;
 }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#notification {
+  position: absolute;
+  top: 110px;
+  left: 40%;
+  padding: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+.maroon-text {
+  color: maroon;
+}

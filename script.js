@@ -2,13 +2,13 @@
 $(document).ready(function() {
   displayCurrentDay();
   loadEventsFromLocalStorage();
-  updateHourlyColours();
+  updateHourlyColors();
 
 // Click event listener using JQuery to save hour and description in local storage, and display notification
 $(".saveBtn").click(function() {
   var hour = $(this).data("hour");
   var description = $("#" + hour).val();
-  localStorage.setItem(hour,description);
+  localStorage.setItem(hour, description);
   showNotification("New appointment added to <span class='maroon-text'>local storage</span>");
   });
 });
@@ -16,7 +16,7 @@ $(".saveBtn").click(function() {
 // Display current day at the top of the schedule
 function displayCurrentDay() {
   var currentDayElement = $("#currentDay");
-  var currentDate = day.js().format("dddd, MMMM DD, YYYY");
+  var currentDate = dayjs().format("dddd, MMMM DD, YYYY");
   currentDayElement.text(currentDate);
 }
 
@@ -25,14 +25,14 @@ function loadEventsFromLocalStorage() {
   for (var i = 9; i <= 17; i++) {
     var eventText = localStorage.getItem(i);
     if (eventText) {
-      $("#", + i).val(eventText);
+      $("#" + i).val(eventText);
     }
   }
 }
 
 // To display past, present & future hours & update color codes accordingly
 function updateHourlyColors() {
-  var currentHour = Day.js().hour();
+  var currentHour = dayjs().hour();
   $(".description").each(function() {
     var hour = parseInt($(this).attr("id"));
 
@@ -44,4 +44,19 @@ function updateHourlyColors() {
       $(this).css("background-color", "#77dd77");
     }
   });
+}
+
+// Notification to be displayed for 2s upon pressing save button
+function showNotification(message) {
+  var notificationElement = $("#notification");
+  notificationElement.html(message);
+  notificationElement.addClass("visible");
+
+  setTimeout(function() {
+    notificationElement.removeClass("visible");
+    setTimeout(function() {
+      notificationElement.text("");
+    }, 2000);
+  }, 2000);
+
 }
