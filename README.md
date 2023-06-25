@@ -12,6 +12,7 @@ When a time block is clicked into, the user is able to enter an event, click the
 
 ## Screenshot of the deployed page
 
+![Work Day Schedule Screenshot](https://github.com/KalidNadere/05-Work-Day-Scheduler/assets/131591052/3589d512-998d-4a49-be74-a16ed1be5107)
 
 
 ## Licence
