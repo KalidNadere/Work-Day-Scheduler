@@ -14,8 +14,8 @@ https://kalidnadere.github.io/Work-Day-Scheduler/
 
 
 ## Screenshot of the deployed page
+![Screenshot of deployed page](https://github.com/KalidNadere/Work-Day-Scheduler/assets/131591052/580de3d1-e6a1-493c-bf05-741a52c851a2)
 
-![Work Day Schedule Screenshot](https://github.com/KalidNadere/05-Work-Day-Scheduler/assets/131591052/3589d512-998d-4a49-be74-a16ed1be5107)
 
 ## Built with
 - Visual Studio Code
